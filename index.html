@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Advertisement</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Advertisement</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Categories</a> |
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="filter">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="latest">Latest</option>
+                <option value="popular">Popular</option>
+            </select>
+
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <div class="product">
+            <img src="product_image.jpg" alt="Product Image">
+            <h2>Product Title</h2>
+            <p>Description of the product goes here.</p>
+            <p>$99.99</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+
+        <!-- Add more products here -->
+
+    </section>
+
+    <footer>
+        &copy; 2023 Shopping Advertisement. All rights reserved.
+    </footer>
+
+    <script>
+        function search() {
+            // Implement search functionality here
+            alert("Search button clicked");
+        }
+
+        function addToCart() {
+            // Implement add to cart functionality here
+            alert("Product added to cart");
+        }
+    </script>
+</body>
+</html>
